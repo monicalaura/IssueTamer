@@ -3,7 +3,7 @@ import React from "react";
 
 const getIssueById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/Issues/${id}`, {
+    const res = await fetch(`https://issue-tamer.vercel.app/api/Issues/${id}`, {
       cache: "no-store",
     });
 
