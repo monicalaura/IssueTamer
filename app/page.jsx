@@ -3,7 +3,7 @@ import IssueCard from "./(components)/IssueCard";
 
 const getIssues = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/Issues", {
+    const res = await fetch("https://issue-tamer.vercel.app/api/Issues", {
       cache: "no-store",
     });
     const data = await res.json();
