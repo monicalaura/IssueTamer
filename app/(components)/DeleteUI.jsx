@@ -14,7 +14,7 @@ const DeleteUI = ({ id }) => {
 
   const deleteIssue = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/Issues/${id}`, {
+      const res = await fetch(`https://issue-tamer.vercel.app/api/Issues/${id}`, {
         method: "DELETE",
       });
 
